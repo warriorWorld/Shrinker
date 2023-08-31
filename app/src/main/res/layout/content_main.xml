@@ -5,4 +5,43 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+    <Button
+        android:id="@+id/image_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/page_margin"
+        android:layout_marginTop="@dimen/page_margin"
+        android:layout_marginEnd="@dimen/page_margin"
+        android:layout_marginBottom="@dimen/page_margin"
+        android:text="图片"
+        app:layout_constraintBottom_toTopOf="@+id/gif_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gif_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/page_margin"
+        android:layout_marginEnd="@dimen/page_margin"
+        android:layout_marginBottom="@dimen/page_margin"
+        android:text="动图"
+        app:layout_constraintBottom_toTopOf="@id/video_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_btn" />
+
+    <Button
+        android:id="@+id/video_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/page_margin"
+        android:layout_marginEnd="@dimen/page_margin"
+        android:layout_marginBottom="@dimen/page_margin"
+        android:text="视频"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gif_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
